@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="#EFACAC"
+    android:background="@drawable/p3"
     android:layout_height="match_parent"
     tools:context=".MusicPlayerActivity">
 
@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/song_title"
         android:text="Tên bài hát"
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:singleLine="true"
         android:ellipsize="marquee"
@@ -24,7 +25,7 @@
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:id="@+id/music_icon_big"
-        android:src="@drawable/music_icon_big"
+        android:src="@drawable/p2"
         android:layout_gravity="center"
         android:padding="20dp" />
 
@@ -80,7 +81,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_centerHorizontal="true"
-                android:background="@drawable/ic_baseline_play" />
+                android:src="@drawable/ic_baseline_pause_24" />
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"

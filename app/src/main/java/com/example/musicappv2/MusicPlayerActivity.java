@@ -53,11 +53,11 @@ public class MusicPlayerActivity extends AppCompatActivity {
                     seekBar.setProgress(mediaPlayer.getCurrentPosition());
                     currentTimeTv.setText(convertToMMSS(mediaPlayer.getCurrentPosition()+""));
                     if(mediaPlayer.isPlaying()){
-                        pausePlay.setImageResource(R.drawable.ic_baseline_pause_24);
+                       pausePlay.setImageResource(R.drawable.ic_baseline_pause_24);
                         musicIcon.setRotation(x++);
                     }
                     else {
-                        pausePlay.setImageResource(R.drawable.ic_baseline_play);
+                       pausePlay.setImageResource(R.drawable.ic_baseline_play);
                         musicIcon.setRotation(0);
                     }
                 }
@@ -130,10 +130,12 @@ public class MusicPlayerActivity extends AppCompatActivity {
 
     private void pausePlay(){
         if(mediaPlayer.isPlaying())
+
             mediaPlayer.pause();
-        else
+        else  {
+
             mediaPlayer.start();
-    }
+    }}
 
     @SuppressLint("DefaultLocale")
     public static String convertToMMSS(String duration){
